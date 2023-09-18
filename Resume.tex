@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{soul}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.6 in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape NAME} \\ \vspace{1pt}
+    LOCATION \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ {PHONE NUMBER} ~ \href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{EMAIL}} ~ 
+    \href{LINKEDIN}{\raisebox{-0.2\height}\faLinkedin\ \underline{LINKEDIN}}  ~
+    \href{PORTFOLIO WEBSITE}{\raisebox{-0.2\height}\faReadme\ \underline{PORTFOLIO WEBSITE}}
+    
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Iowa}{Aug. 2020 -- May 2024}
+    {Bachelor of Science in Engineering, Computer Science \& Engineering; GPA: 3.52
+    }{Iowa City, Iowa}
+    \vspace{2pt}
+    \newline
+            \emph
+                {Focus Area in Big Data \& Machine Learning}
+            \newline
+            \emph
+                {Minor in Mathematics}
+
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=5pt]
+                \item\small Data Structures
+                \item Database Management
+                \item Algorithms
+                \item Software Design
+                \item Prompt Engineering
+                \item Computer Architecture
+                \item Embedded Systems
+                \item Internet of Things
+            \end{itemize}
+        \end{multicols}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Raytheon Technologies}{May 2023 -- Aug. 2023}
+      {Digital Leadership Development Program: Project Management Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Coordinated the updating and condensing of knowledge-based articles used by employees for troubleshooting purposes. Resulting in increased accessibility and effectiveness of articles}
+        \resumeItem{Planned and programmed a software add-in for Microsoft Outlook that would automatically fill in meeting details for a given user}
+        \resumeItemListEnd
+        \vspace{4pt}
+    \resumeSubheading
+      {Collins Aerospace}{May 2022 -- May 2023}
+      {Software Engineering Intern}{Coralville, Iowa}
+      \resumeItemListStart
+        \resumeItem{Led in migrating critical server information containing transaction history from a local machine to a virtual machine off-site. Resulting in improved reliability and speed}
+        \resumeItem{Developed data-focused software to pull relevant inventory data for display, generate Excel reports, and automatically order and track materials in a warehouse. Enhancing overall warehouse efficiency}
+        \resumeItem{Created a multi-threaded file synchronization software deployed across over thirty machines. Allowing for greater reliability of data transfer between computers, keeping backups of files changed}
+        \resumeItem{Built a user-facing web application, logging and displaying specific user data for managers and employees to view}        
+        \resumeItemListEnd
+        \vspace{4pt}
+    \resumeSubheading
+      {Carousel Motors}{May 2016 -- May 2022}
+      {Part Time Lot Porter}{Iowa City, Iowa}
+    \vspace{4pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------%
+%-----No room for projects-----%
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Python, C++, Java, SQL, JavaScript, Haskell, Verilog, C, Assembly} \\
+     \textbf{Developer Tools}{: Google Cloud Platform, Microsoft Office Suite, SPICE Software, Microsoft SQL Server \\Management Studio, JetBrains Products, VSCode, Microsoft Visual Studio, VSTO} \\
+     \textbf{Technologies/Frameworks}{: Vue.js, Databases, HTML, CSS, Node.js, Linux, GitHub, WordPress, LaTeX, .NET, Subversion} \\
+     \textbf{Certifications}{: 98-349:MTA Windows Operating System Fundamentals} \\
+    }}
+ \end{itemize}
+ \vspace{-8pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Collins Aerospace}{Aug. 2022 -- Present}{Student Ambassador}{Iowa City, Iowa} 
+        \vspace{2pt}
+        \resumeSubheading{The University of Iowa League of Legends eSports Club}{Aug. 2022 -- Present}{President}{Iowa City, Iowa}
+        \vspace{2pt}
+                \resumeItemListStart
+                    \resumeItem{Managed an eSports team consisting of anywhere from five to ten players in a given season. Worked with team to schedule games, practices, and communicated with tournament managers to resolve conflicts}
+                    \resumeItem{Led members to work towards goals to improve team performance as well as teach the importance of communication}
+                    \resumeItem{Communicated with other universities to plan and manage tournaments}
+                    \resumeItem{Facilitated club activities for over sixty active members. Activities included general meetings, sports events, and career development-focused meetings}          \resumeSubHeadingListEnd       
+                \resumeItemListEnd
+\vspace{.3 in}
+\end{document}
